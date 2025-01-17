@@ -31,4 +31,15 @@ public class TowerState
     {
 
     }
+
+    public Transform FindEnemy()
+    {
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(tower.transform.position, tower.GetRange());
+        if (enemies.Length > 0)
+        {
+            return enemies[0].transform;
+        }
+
+        return null;
+    }
 }

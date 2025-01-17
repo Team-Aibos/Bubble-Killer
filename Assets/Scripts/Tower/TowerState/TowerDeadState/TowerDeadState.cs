@@ -11,16 +11,13 @@ public class TowerDeadState : TowerState
 
     public override void Enter()
     {
-        base.Enter();
+        tower.animator.SetTrigger("Dead");
+        Object.Destroy(tower.gameObject, 1.0f);    //一秒后摧毁防御塔
     }
 
     public override void Exit()
     {
+        //这里有待添加一个结束游戏的场景
         base.Exit();
-    }
-
-    public override void Update()
-    {
-        base.Update();
     }
 }

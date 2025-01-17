@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TowerAttackState : TowerState
 {
+    private float attackTimer;
+
     public TowerAttackState(Tower tower, TowerStateMachine stateMachine, string stateName) : base(tower, stateMachine, stateName)
     {
 
@@ -11,16 +13,28 @@ public class TowerAttackState : TowerState
 
     public override void Enter()
     {
-        base.Enter();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
+        attackTimer = Time.time;
+        tower.animator.SetTrigger("TowerAttack");
     }
 
     public override void Update()
     {
-        base.Update();
+        Transform target = FindEnemy();
+        if (target == null)
+        {
+            tower.stateMachine.ChangeState(tower.idleState);
+            return;
+        }
+
+        if (Time.time - attackTimer > tower.GetAttackRate())
+        {
+            attackTimer = Time.time;
+            tower.TowerAttack(target);
+        }
+    }
+
+    public override void Exit()
+    {
+        tower.stateMachine.ChangeState(tower.idleState);
     }
 }

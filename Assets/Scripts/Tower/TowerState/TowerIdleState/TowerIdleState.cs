@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerAttributes
+public class TowerIdleState : MonoBehaviour
 {
-
-
-
-
+   
 }

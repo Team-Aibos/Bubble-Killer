@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f6d2535c735043c42a9057ff3dcd18e2
+guid: 8e4db1654b515244ab6cbadbf328bca1
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,8 +71,8 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
-    importHiddenLayers: 1
+    fileImportMode: 0
+    importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
@@ -84,8 +84,8 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
-    importHiddenLayers: 1
+    fileImportMode: 0
+    importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638727557661737516
+  platformSettingsDirtyTick: 638728294152224295
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,98 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: BubbleTest_Frame_0
+  - name: PlayerHP-sheet
     originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 40
-      y: 79
-      width: 28
-      height: 28
-    spriteID: f109d6f2faf69e54497c9059d76271f4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 40, y: 79}
-  - name: BubbleTest_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: -0.107142866}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 76
-      y: 4
-      width: 28
-      height: 28
-    spriteID: f6db32a196fc8a84bb69081e9c6d6e73
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 76, y: 4}
-  - name: BubbleTest_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: -0.14285715}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 76
-      y: 40
-      width: 28
-      height: 28
-    spriteID: 638f6a0bb0ceb5147a21295ada3eceee
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 76, y: 40}
-  - name: BubbleTest_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.03448276}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 40
-      y: 42
-      width: 28
-      height: 29
-    spriteID: d6509d8d80459234083aa7887dd60a48
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 40, y: 42}
-  - name: BubbleTest_Frame_4
-    originalName: 
-    pivot: {x: 0.5, y: 0.033333335}
+    pivot: {x: 0.5652174, y: -0.17857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 28
-      height: 30
-    spriteID: 4d58e30c39ccba44b857f67f7b99d80d
+      width: 46
+      height: 140
+    spriteID: 738ef0209bd297f46b973b76f4c0c084
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,19 +140,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-  - name: BubbleTest_Frame_5
+    uvTransform: {x: -2, y: -21}
+  spriteSheetImportData:
+  - name: PlayerHP-sheet_0
     originalName: 
-    pivot: {x: 0.5, y: 0.06666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 42
-      width: 28
-      height: 30
-    spriteID: 5e7de085bc20e4541a786d5a2f5504ac
+      y: 133
+      width: 45
+      height: 11
+    spriteID: 80c733c1c72b8e34faa340e016f89626
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,39 +161,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 42}
-  - name: BubbleTest_Frame_6
+    uvTransform: {x: 0, y: 0}
+  - name: PlayerHP-sheet_1
     originalName: 
-    pivot: {x: 0.5, y: 0.033333335}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5
+      y: 69
+      width: 45
+      height: 11
+    spriteID: 767b38c09c5aae84d91d29e523352bf2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PlayerHP-sheet_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 80
-      width: 28
-      height: 30
-    spriteID: ac41fc3d1d4824a4fb3ac2d69e380c88
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 80}
-  - name: BubbleTest_Frame_7
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 40
       y: 4
-      width: 28
-      height: 30
-    spriteID: 806b8752b22db88479fd71c4f55ccd39
+      width: 46
+      height: 13
+    spriteID: 38204d722b7acdf49adce989277ed41d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,88 +201,24 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 40, y: 4}
-  spriteSheetImportData: []
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -476842404
-    name: BubbleTest
+    guid: 1851889493
+    name: PlayerHP-sheet
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: BubbleTest_Frame_0
+    - name: PlayerHP-sheet
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 2
-        y: 2
-        width: 28
-        height: 28
-      spriteId: f109d6f2faf69e54497c9059d76271f4
-    - name: BubbleTest_Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 2
-        y: 3
-        width: 28
-        height: 28
-      spriteId: f6db32a196fc8a84bb69081e9c6d6e73
-    - name: BubbleTest_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 2
-        y: 4
-        width: 28
-        height: 28
-      spriteId: 638f6a0bb0ceb5147a21295ada3eceee
-    - name: BubbleTest_Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 2
-        y: 1
-        width: 28
-        height: 29
-      spriteId: d6509d8d80459234083aa7887dd60a48
-    - name: BubbleTest_Frame_4
-      frameIndex: 4
-      additiveSortOrder: 0
-      cellRect:
-        x: 2
-        y: -1
-        width: 28
-        height: 30
-      spriteId: 4d58e30c39ccba44b857f67f7b99d80d
-    - name: BubbleTest_Frame_5
-      frameIndex: 5
-      additiveSortOrder: 0
-      cellRect:
-        x: 2
-        y: -2
-        width: 28
-        height: 30
-      spriteId: 5e7de085bc20e4541a786d5a2f5504ac
-    - name: BubbleTest_Frame_6
-      frameIndex: 6
-      additiveSortOrder: 0
-      cellRect:
-        x: 2
-        y: -1
-        width: 28
-        height: 30
-      spriteId: ac41fc3d1d4824a4fb3ac2d69e380c88
-    - name: BubbleTest_Frame_7
-      frameIndex: 7
-      additiveSortOrder: 0
-      cellRect:
-        x: 2
+        x: 0
         y: 0
-        width: 28
-        height: 30
-      spriteId: 806b8752b22db88479fd71c4f55ccd39
+        width: 64
+        height: 192
+      spriteId: 738ef0209bd297f46b973b76f4c0c084
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -404,4 +261,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 64, y: 192}

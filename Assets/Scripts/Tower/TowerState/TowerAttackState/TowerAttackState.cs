@@ -35,6 +35,6 @@ public class TowerAttackState : TowerState
 
     public override void Exit()
     {
-        tower.stateMachine.ChangeState(tower.idleState);
+
     }
 }

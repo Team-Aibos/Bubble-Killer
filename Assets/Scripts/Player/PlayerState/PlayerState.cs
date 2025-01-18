@@ -38,7 +38,5 @@ public class PlayerState
         player.lastDash += Time.deltaTime;
         xInput = Input.GetAxisRaw("Horizontal");
         yInput = Input.GetAxisRaw("Vertical");
-
     }
-
 }

@@ -14,7 +14,7 @@ public class BubbleManager : MonoBehaviour
     [Header("Spawn Settings")]
     [SerializeField] private float normalSpawnTime = 0.3f;    // 正常生成泡泡的时间间隔（秒）
     [SerializeField] private float waveSpawnInterval;  // 波次生成的时间间隔（秒）
-    [SerializeField] private int waveCount = 15;            // 每波生成的泡泡数量
+    [SerializeField] private int waveCount = 10;            // 每波生成的泡泡数量
     [SerializeField] private int mostBubbles = 120;         // 最多可以生成的泡泡数量
     [SerializeField] private int bubbleCountNow = 0;           // 当前已经生成的泡泡数量
     [SerializeField] private SpriteRenderer background;    // 背景图片
@@ -137,7 +137,7 @@ public class BubbleManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f); // 这里设置每个泡泡生成的间隔时间，控制泡泡的密集程度
         }
 
-        waveCount += 20;    // 每次增加生成20个泡泡，增加难度
+        waveCount += 3;    // 每次增加生成20个泡泡，增加难度
 
         isWaveSpawning = false;
         waveTimer = waveSpawnInterval; // 初始化波次生成的时间间隔

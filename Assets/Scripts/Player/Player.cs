@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
     public float HP = 100f;
     public float maxHP = 100f;
     public float respawnTime = 3f; // ∏¥ªÓ ±º‰
-    public float damage = 10f;
     public float moveSpeed = 12f;
     public float dashSpeed = 30f;
     public float dashTime = 0.2f;
@@ -35,6 +34,7 @@ public class Player : MonoBehaviour
 
     public PlayerDashState dashState { get; private set; }
     #endregion
+
     private void Awake()
     {
         stateMachine = new PlayerStateMachine();

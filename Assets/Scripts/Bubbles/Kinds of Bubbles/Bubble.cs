@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
+    [SerializeField] private float health;
     public float movespeed;
     public float damage;
     public Transform tower;  // ≈›≈›œÚtower“∆∂Ø
@@ -44,6 +45,16 @@ public class Bubble : MonoBehaviour
     public void Update()
     {
         stateMachine.currentState.Update();
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            isDead = true;
+            Destroy(gameObject);
+        }
     }
 
     public bool DetectPlayer()

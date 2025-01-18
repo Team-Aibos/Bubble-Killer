@@ -36,7 +36,7 @@ public class TowerBullet : MonoBehaviour
         //检测子弹是否击中目标，击中目标则销毁子弹
         if (Vector3.Distance(transform.position, target.position) < 0.1f)
         {
-            //target.GetComponent<Bubble>().TakeDamage(damage);
+            target.GetComponent<Bubble>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }

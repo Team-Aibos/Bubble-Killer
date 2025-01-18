@@ -5,16 +5,19 @@ using UnityEngine;
 public class BubbleManager : MonoBehaviour
 {
     #region Attributes
+    [Header("Bubble Prefabs")]
     [SerializeField] private GameObject commonBubble;
     [SerializeField] private GameObject quickBubble;
     [SerializeField] private GameObject archerBubble;
     [SerializeField] private GameObject slimeBubble;
 
+    [Header("Spawn Settings")]
     [SerializeField] private float normalSpawnTime = 0.3f;    // 正常生成泡泡的时间间隔（秒）
-    [SerializeField] private float waveSpawnInterval = 8f;  // 波次生成的时间间隔（秒）
+    [SerializeField] private float waveSpawnInterval;  // 波次生成的时间间隔（秒）
     [SerializeField] private int waveCount = 15;            // 每波生成的泡泡数量
     [SerializeField] private int mostBubbles = 120;         // 最多可以生成的泡泡数量
     [SerializeField] private int bubbleCountNow = 0;           // 当前已经生成的泡泡数量
+    [SerializeField] private SpriteRenderer background;    // 背景图片
 
     private float runTime;    //表示运行时间
     private float spawnTimer;        // 用来计时正常生成泡泡的计时器
@@ -27,10 +30,8 @@ public class BubbleManager : MonoBehaviour
 
     void Start()
     {
-        // 可以通过代码自动获取场景边界
-        Camera cam = Camera.main;
-        sceneBoundMin = cam.ViewportToWorldPoint(new Vector3(0, 0, 0));
-        sceneBoundMax = cam.ViewportToWorldPoint(new Vector3(1, 1, 0));
+        sceneBoundMin = background.bounds.min;
+        sceneBoundMax = background.bounds.max;
 
         spawnTimer = normalSpawnTime; // 初始化正常生成泡泡的时间间隔
         waveTimer = waveSpawnInterval; // 初始化波次生成的时间间隔

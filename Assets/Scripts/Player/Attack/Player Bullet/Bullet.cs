@@ -23,10 +23,14 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         // 检测碰撞对象是否是怪物
-        if (collision.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Bubble"))
         {
             // 调用怪物的受伤函数
-
+            Bubble target = collision.gameObject.GetComponent<Bubble>();
+            if (target != null)
+            {
+                target.TakeDamage(damage); // 减少怪物生命值
+            }
 
             // 销毁子弹
             Destroy(gameObject);

@@ -61,7 +61,7 @@ public class ItemManager : CompositeManager
         {
             return moveWithHurt;
         }
-        else if (randomNum > 70 && randomNum <= 90)
+        else if (randomNum > 60 && randomNum <= 90)
         {
             return towerMultiply;
         }

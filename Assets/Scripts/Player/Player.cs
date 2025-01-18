@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
     [Header("Player info")]
     public float HP = 100f;
+    public float maxHP = 100f;
     public float respawnTime = 3f; // ∏¥ªÓ ±º‰
     public float damage = 10f;
     public float moveSpeed = 12f;
@@ -59,6 +60,11 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector2(_xVelocity, _yVelocity);
         FlipController(_xVelocity);
+    }
+
+    public float GetHP()
+    {
+        return HP;
     }
 
     public void Flip()

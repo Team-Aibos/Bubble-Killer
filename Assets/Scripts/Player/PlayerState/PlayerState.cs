@@ -24,13 +24,13 @@ public class PlayerState
 
     public virtual void Enter()
     {
-        //player.animator.SetBool(animBoolName, true);
+        player.animator.SetBool(animBoolName, true);
         rb = player.rb;
     }
 
     public virtual void Exit()
     {
-        //player.animator.SetBool(animBoolName, false);
+        player.animator.SetBool(animBoolName, false);
     }
 
     public virtual void Update()

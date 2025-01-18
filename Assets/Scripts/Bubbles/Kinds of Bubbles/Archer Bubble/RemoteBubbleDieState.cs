@@ -20,6 +20,7 @@ public class RemoteBubbleDieState : BubbleState
     public override void Exit()
     {
         base.Exit();
+        UnityEngine.Object.Destroy(remoteBubble.gameObject);
     }
 
     public override void Update()

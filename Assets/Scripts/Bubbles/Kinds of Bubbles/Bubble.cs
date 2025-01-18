@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
-    [SerializeField] private float health;
+    public float health;
     public float movespeed;
     public float damage;
     public Transform tower;  // ≈›≈›œÚtower“∆∂Ø

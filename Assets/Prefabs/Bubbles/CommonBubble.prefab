@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7645215920171320779}
   - component: {fileID: 4272805149290357377}
   - component: {fileID: 4416581910181266663}
-  - component: {fileID: 5200089595368628217}
   m_Layer: 7
   m_Name: CommonBubble
   m_TagString: Bubble
@@ -95,9 +94,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.15881348}
+  m_Offset: {x: 0, y: 0.004317045}
   serializedVersion: 2
-  m_Radius: 0.124816895
+  m_Radius: 0.13194764
 --- !u!114 &4416581910181266663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 4ce768219646d5f498ac8a635ec64a6a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.347
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 4ce768219646d5f498ac8a635ec64a6a, type: 3}
       propertyPath: m_LocalPosition.z

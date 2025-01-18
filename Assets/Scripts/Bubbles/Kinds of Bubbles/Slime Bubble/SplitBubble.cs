@@ -40,13 +40,34 @@ public class SplitBubble : Bubble
         {
             if (canSplit)
             {
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 5; i++)
                 {
                     // 复制当前的泡泡并放置在附近
                     SplitBubble newBubble = CreateSplitBubbleAtNearbyPosition();
                 }
             }
             isMoving = false;  // 停止泡泡的移动
+
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                Player target = collision.gameObject.GetComponent<Player>();
+
+                if (target != null)
+                {
+                    target.PlayerGetHurt(damage);
+                }
+            }
+
+            if (collision.gameObject.CompareTag("Tower"))
+            {
+                Tower target = collision.gameObject.GetComponent<Tower>();
+
+                if (target != null)
+                {
+                    target.TakeDamage(damage);
+                }
+            }
+
         }
     }
 
@@ -66,6 +87,7 @@ public class SplitBubble : Bubble
 
         newBubble.isMoving = true;  // 确保新泡泡开始移动
         newBubble.canSplit = false;  // 新泡泡不可以分裂
+        newBubble.health = health / 2;
 
         // 初始化新泡泡的状态机
         newBubble.stateMachine.Initialize(newBubble.splitBubbleMoveState);

@@ -11,4 +11,20 @@ public class QuickBubbleAttackState : BubbleState
     {
         quickBubble = _quickBubble;
     }
+
+    public override void Enter()
+    {
+        base.Enter();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        UnityEngine.Object.Destroy(quickBubble.gameObject);
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
 }

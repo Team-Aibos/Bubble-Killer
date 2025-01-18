@@ -11,4 +11,20 @@ public class SplitBubbleAttackState : BubbleState
     {
         splitBubble = _splitBubble;
     }
+
+    public override void Enter()
+    {
+        base.Enter();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        UnityEngine.Object.Destroy(splitBubble.gameObject);
+    }
+
+    public override void Update()
+    {
+        base.Update();
+    }
 }

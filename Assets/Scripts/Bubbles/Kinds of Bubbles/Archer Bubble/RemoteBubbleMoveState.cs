@@ -43,5 +43,10 @@ public class RemoteBubbleMoveState : BubbleState
             stateMachine.ChangeState(remoteBubble.remoteBubbleAttackState);
             remoteBubble.isAttacking = true;
         }
+
+        if(remoteBubble.isDead)
+        {
+            stateMachine.ChangeState(remoteBubble.remoteBubbleDieState);
+        }
     }
 }

@@ -20,6 +20,7 @@ public class CommonBubbleAttackState : BubbleState
     public override void Exit()
     {
         base.Exit();
+        UnityEngine.Object.Destroy(commonBubble.gameObject);
     }
 
     public override void Update()

@@ -37,6 +37,26 @@ public class CommonBubble : Bubble
         if (collision.gameObject.CompareTag("Tower") || collision.gameObject.CompareTag("Player"))
         {
             isMoving = false;  // Í£Ö¹ÅÝÅÝµÄÒÆ¶¯
+
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                Player target = collision.gameObject.GetComponent<Player>();
+
+                if (target != null)
+                {
+                    target.PlayerGetHurt(damage);
+                }
+            }
+
+            if (collision.gameObject.CompareTag("Tower"))
+            {
+                Tower target = collision.gameObject.GetComponent<Tower>();
+
+                if (target != null) 
+                {
+                    target.TakeDamage(damage);
+                }
+            }
         }
     }
 }

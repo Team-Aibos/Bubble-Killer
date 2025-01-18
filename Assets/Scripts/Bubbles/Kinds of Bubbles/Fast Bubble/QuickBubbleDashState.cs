@@ -43,5 +43,10 @@ public class QuickBubbleDashState : BubbleState
             stateMachine.ChangeState(quickBubble.quickBubbleAttackState);
             quickBubble.isAttacking = true;
         }
+
+        if (quickBubble.isDead)
+        {
+            stateMachine.ChangeState(quickBubble.quickBubbleDieState);
+        }
     }
 }

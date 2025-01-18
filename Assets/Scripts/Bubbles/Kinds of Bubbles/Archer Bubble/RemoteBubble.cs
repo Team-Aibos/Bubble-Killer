@@ -25,14 +25,18 @@ public class RemoteBubble : Bubble
         stateMachine.Initialize(remoteBubbleMoveState);
     }
 
-    public float attackRange; // 远程泡泡的攻击范围
+    public float attackRange;  // 远程泡泡的攻击范围
+
+    public float distanceToPlayer;  // 计算泡泡与玩家的距离
+    public float distanceToTower;  // 计算泡泡与塔的距离
+
+    public GameObject bulletPrefab;  // 子弹 Prefab
+    public Transform shootPoint;     // 子弹发射点
 
     new private void Update()
     {
-        // 计算泡泡与玩家的距离
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        // 计算泡泡与塔的距离
-        float distanceToTower = Vector2.Distance(transform.position, tower.position);
+        distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        distanceToTower = Vector2.Distance(transform.position, tower.position);
 
         // 如果距离玩家或塔小于或等于攻击范围，则停止移动
         if (distanceToPlayer <= attackRange || distanceToTower <= attackRange)
@@ -41,5 +45,36 @@ public class RemoteBubble : Bubble
         }
 
         base.Update();
+    }
+
+    // 攻击玩家
+    public void AttackPlayer()
+    {
+        // 生成子弹并设置朝向玩家的方向
+        ShootBullet(player.position);
+    }
+
+    // 攻击塔
+    public void AttackTower()
+    {
+        // 生成子弹并设置朝向塔的方向
+        ShootBullet(tower.position);
+    }
+
+    // 发射子弹的逻辑
+    private void ShootBullet(Vector3 targetPosition)
+    {
+        // 生成子弹
+        GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
+
+        // 计算目标方向
+        Vector2 direction = (targetPosition - shootPoint.position).normalized;
+
+        // 设置子弹的运动方向
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.velocity = direction * attackRange;  // 攻击范围可以决定子弹的速度
+        }
     }
 }

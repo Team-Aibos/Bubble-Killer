@@ -43,5 +43,10 @@ public class SplitBubbleMoveState : BubbleState
             stateMachine.ChangeState(splitBubble.splitBubbleAttackState);
             splitBubble.isAttacking = true;
         }
+
+        if(splitBubble.isDead)
+        {
+            stateMachine.ChangeState(splitBubble.splitBubbleDieState);
+        }
     }
 }

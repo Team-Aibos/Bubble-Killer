@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  duration: 8
+  duration: 16
 --- !u!212 &8998810677727634593
 SpriteRenderer:
   m_ObjectHideFlags: 0

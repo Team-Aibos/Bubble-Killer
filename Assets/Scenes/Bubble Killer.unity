@@ -213,6 +213,7 @@ MonoBehaviour:
   range: 10
   bulletPrefab: {fileID: 4513700213000929398, guid: 154ccae6ccd193a429db317f47d0e1d0, type: 3}
   bulletSpawn: {fileID: 740052889}
+  currentAdditionalTargets: 0
 --- !u!4 &58825076
 Transform:
   m_ObjectHideFlags: 0
@@ -582,6 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 338909399}
+  - component: {fileID: 338909400}
   m_Layer: 0
   m_Name: ItemManager
   m_TagString: Untagged
@@ -604,6 +606,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &338909400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338909398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d8e460ec2dd494eaffe6f9cd8877d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  herb: {fileID: 3090380518626935363, guid: 7d2958006b281994799db3b7714f98a7, type: 3}
+  moveWithHurt: {fileID: 2405080053135192790, guid: 18c3bcdf7a800cf41b28ea8361fb34e8, type: 3}
+  allScreenBomb: {fileID: 2596235854330548188, guid: 299439e67f8b28143a91de16b571cc5b, type: 3}
+  multiBullet: {fileID: 7800476025038548769, guid: fbf9850c665f1494bb51269824337b65, type: 3}
+  towerMultiply: {fileID: 8012833504247716545, guid: fb0eda43213b9034d940d6f615d3a408, type: 3}
+  normalSpawnTime: 12
+  edgeMargin: 1
+  edgeProbability: 0.8
+  background: {fileID: 2096283380}
 --- !u!1 &360062725
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,10 +664,7 @@ MonoBehaviour:
   waveSpawnInterval: 15
   waveCount: 15
   mostBubbles: 120
-  bubbleCountNow: 0
   background: {fileID: 2096283380}
-  sceneBoundMax: {x: 0, y: 0}
-  sceneBoundMin: {x: 0, y: 0}
 --- !u!4 &360062727
 Transform:
   m_ObjectHideFlags: 0
@@ -1142,37 +1162,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 45.10868, y: 0.14157683}
   m_EdgeRadius: 0
---- !u!1 &1356902036
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1356902037}
-  m_Layer: 0
-  m_Name: AttackMultiple
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1356902037
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356902036}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.980183, y: -1.301286, z: -0.16549358}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1556465898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,37 +1335,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1994995934
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1994995935}
-  m_Layer: 0
-  m_Name: CompositeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1994995935
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994995934}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.77318317, y: -1.1683557, z: -0.05938156}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2043152656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,8 +1490,8 @@ Transform:
   m_GameObject: {fileID: 2096283379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1118, y: -1.1, z: 0}
-  m_LocalScale: {x: 21.585072, y: 12.430469, z: 1}
+  m_LocalPosition: {x: 0.03, y: -0.12, z: 0}
+  m_LocalScale: {x: 27.05032, y: 15.817512, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 456530762}
@@ -1600,6 +1558,4 @@ SceneRoots:
   - {fileID: 116991369}
   - {fileID: 360062727}
   - {fileID: 338909399}
-  - {fileID: 1356902037}
   - {fileID: 1567114096}
-  - {fileID: 1994995935}

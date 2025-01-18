@@ -9,8 +9,9 @@ public class ItemManager : CompositeManager
     [Header("Item Prefabs")]
     [SerializeField] private GameObject herb;
     [SerializeField] private GameObject moveWithHurt;
-    [SerializeField] private GameObject AllScreenBomb;
-    [SerializeField] private GameObject MultiBullet;
+    [SerializeField] private GameObject allScreenBomb;
+    [SerializeField] private GameObject multiBullet;
+    [SerializeField] private GameObject towerMultiply;
 
     [Header("Spawn Settings")]
     [SerializeField] private float normalSpawnTime;    // 正常生成泡泡的时间间隔（秒）
@@ -52,21 +53,21 @@ public class ItemManager : CompositeManager
     public GameObject SpawnItemType()
     {
         float randomNum = SetRandomNum(0, 100);
-        if (randomNum >= 0 && randomNum <= 40)
+        if (randomNum >= 0 && randomNum <= 30)
         {
             return herb;
         }
-        else if (randomNum > 40 && randomNum <= 70)
+        else if (randomNum > 30 && randomNum <= 60)
         {
             return moveWithHurt;
         }
         else if (randomNum > 70 && randomNum <= 90)
         {
-            return AllScreenBomb;
+            return towerMultiply;
         }
         else
         {
-            return MultiBullet;
+            return allScreenBomb;
         }
     }
 

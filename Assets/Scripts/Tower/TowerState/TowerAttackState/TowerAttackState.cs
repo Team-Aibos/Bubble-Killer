@@ -29,7 +29,7 @@ public class TowerAttackState : TowerState
         if (Time.time - attackTimer > tower.GetAttackRate())
         {
             attackTimer = Time.time;
-            tower.TowerAttack(target);
+            tower.TowerStrike(target);
         }
     }
 

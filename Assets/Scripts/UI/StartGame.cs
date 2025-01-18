@@ -9,6 +9,6 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public void LoadingGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

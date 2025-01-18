@@ -30,7 +30,7 @@ public class PlayerDashState : PlayerState
         //Debug.Log("im dash" + xInput);
         //Debug.Log("time is" + dashTimeLeft);
 
-        //ShadowPool.instance.GetFromPool();
+        ShadowPool.instance.GetFromPool();
         if (dashTimeLeft < 0) 
         {
             player.SetVelocity(0, 0);

@@ -37,7 +37,15 @@ public class TowerState
         Collider2D[] enemies = Physics2D.OverlapCircleAll(tower.transform.position, tower.GetRange(), LayerMask.GetMask("Enemy"));
         if (enemies.Length > 0)
         {
-            return enemies[0].transform;
+            Collider2D closestEnemy = enemies[0];
+            for (int i = 1; i < enemies.Length; i++)
+            {
+                if (Vector2.Distance(tower.transform.position, enemies[i].transform.position) < Vector2.Distance(tower.transform.position, closestEnemy.transform.position))
+                {
+                    closestEnemy = enemies[i];
+                }
+            }
+            return closestEnemy.transform;
         }
 
         return null;

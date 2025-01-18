@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7645215920171320779}
   - component: {fileID: 4272805149290357377}
   - component: {fileID: 4416581910181266663}
+  - component: {fileID: 5200089595368628217}
   m_Layer: 7
   m_Name: CommonBubble
   m_TagString: Bubble
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 790.35913, y: 656.28253, z: -10.759264}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2920953940721552790}
@@ -94,9 +95,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.15881348}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.124816895
 --- !u!114 &4416581910181266663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,14 +110,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17446937b13f25a41aa0c80e904d3e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 1.5
+  health: 10
+  movespeed: 0.5
   damage: 10
   tower: {fileID: 0}
   player: {fileID: 0}
   isMoving: 1
   isAttacking: 0
   isDead: 0
-  playerCheckDistance: 2
+  playerCheckDistance: 1
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 256

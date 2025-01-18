@@ -9,15 +9,17 @@ public class Player : MonoBehaviour
     public float HP = 100f;
     public float maxHP = 100f;
     public float respawnTime = 3f; // 复活时间
-    public float damage = 10f;
     public float moveSpeed = 12f;
     public float dashSpeed = 30f;
     public float dashTime = 0.2f;
     public float dashCD = 0.2f;
-
     public float lastDash = 100;//上次dash时间间隔
-
     private bool isDead = false; // 是否死亡
+
+    [Header("Item Effect")]
+    public bool canHurtOnMove = false;
+    public float moveDamage;
+    public float effectEndTime;
 
     public int facingDir { get; private set; } = 0;
     private bool facingRight = true;
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour
 
     public PlayerDashState dashState { get; private set; }
     #endregion
+
     private void Awake()
     {
         stateMachine = new PlayerStateMachine();
@@ -54,6 +57,8 @@ public class Player : MonoBehaviour
     private void Update()
     {
         stateMachine.currentState.Update();
+
+        ItemCheck();
     }
 
     public void SetVelocity(float _xVelocity, float _yVelocity)
@@ -65,6 +70,13 @@ public class Player : MonoBehaviour
     public float GetHP()
     {
         return HP;
+    }
+
+    public void Heal(float healAmount)
+    {
+        HP += healAmount;
+        if (HP > maxHP)
+            HP = maxHP;
     }
 
     public void Flip()
@@ -114,5 +126,32 @@ public class Player : MonoBehaviour
 
         // 重置死亡状态
         isDead = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (canHurtOnMove && collision.gameObject.CompareTag("Bubble"))
+        {
+            Bubble enemy = collision.gameObject.GetComponent<Bubble>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(moveDamage); // 对敌人造成伤害
+            }
+        }
+    }
+
+    public void EnableMoveWithHurt(float damage, float duration)
+    {
+        canHurtOnMove = true;
+        moveDamage = damage;
+        effectEndTime = Time.time + duration;
+    }
+
+    public void ItemCheck()
+    {
+        if (canHurtOnMove && Time.time > effectEndTime)
+        {
+            canHurtOnMove = false; // 超过持续时间后禁用效果
+        }
     }
 }

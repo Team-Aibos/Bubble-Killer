@@ -29,12 +29,12 @@ public class TowerAttackState : TowerState
         if (Time.time - attackTimer > tower.GetAttackRate())
         {
             attackTimer = Time.time;
-            tower.TowerAttack(target);
+            tower.TowerStrike(target);
         }
     }
 
     public override void Exit()
     {
-        tower.stateMachine.ChangeState(tower.idleState);
+
     }
 }

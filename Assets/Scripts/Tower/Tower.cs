@@ -13,6 +13,7 @@ public class Tower : MonoBehaviour
     [SerializeField] private float range;    //攻击范围
     [SerializeField] private GameObject bulletPrefab;    //子弹预制体
     [SerializeField] private Transform bulletSpawn;    //子弹出生点
+    [SerializeField] private int currentAdditionalTargets;    //额外目标数量
     #endregion
 
     #region Components
@@ -73,6 +74,24 @@ public class Tower : MonoBehaviour
         }
     }
 
+    public void TowerStrike(Transform enemy)
+    {
+        TowerAttack(enemy);
+
+        // 寻找并攻击其他目标
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, range, LayerMask.GetMask("Enemy"));
+        int additionalTargetCount = Mathf.Min(currentAdditionalTargets, enemies.Length - 1); // 限制额外目标数量
+
+        for (int i = 0; i < additionalTargetCount; i++)
+        {
+            Transform extraTarget = enemies[i].transform;
+            if (extraTarget != enemy)
+            {
+                TowerAttack(extraTarget);
+            }
+        }
+    }
+
     public void TowerAttack(Transform enemy)
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
@@ -86,5 +105,18 @@ public class Tower : MonoBehaviour
     public float GetAttackRate()
     {
         return attackRate;
+    }
+
+    // 增加额外目标逻辑
+    public void AdditionalTargets(int additionalTargets, float duration)
+    {
+        currentAdditionalTargets += additionalTargets;
+        StartCoroutine(RemoveAdditionalTargetsAfterDelay(additionalTargets, duration));
+    }
+
+    private IEnumerator RemoveAdditionalTargetsAfterDelay(int additionalTargets, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        currentAdditionalTargets -= additionalTargets; // 时间到后恢复默认目标数
     }
 }

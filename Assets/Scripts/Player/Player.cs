@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     private bool isDead = false; // ÊÇ·ñËÀÍö
 
     [Header("Item Effect")]
-    [Header("Move with Hurt")]
     public bool canHurtOnMove = false;
     public float moveDamage;
     public float effectEndTime;

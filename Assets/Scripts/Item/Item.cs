@@ -9,9 +9,9 @@ public class Item : MonoBehaviour
 
     }
 
-   public virtual void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             //调用OnPickUp方法
             OnPickUp();

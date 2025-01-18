@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BubbleManager : MonoBehaviour
+public class BubbleManager : CompositeManager
 {
     #region Attributes
     [Header("Bubble Prefabs")]
@@ -16,16 +16,15 @@ public class BubbleManager : MonoBehaviour
     [SerializeField] private float waveSpawnInterval;  // 波次生成的时间间隔（秒）
     [SerializeField] private int waveCount = 10;            // 每波生成的泡泡数量
     [SerializeField] private int mostBubbles = 120;         // 最多可以生成的泡泡数量
-    [SerializeField] private int bubbleCountNow = 0;           // 当前已经生成的泡泡数量
+    private int bubbleCountNow = 0;           // 当前已经生成的泡泡数量
     [SerializeField] private SpriteRenderer background;    // 背景图片
 
-    private float runTime;    //表示运行时间
     private float spawnTimer;        // 用来计时正常生成泡泡的计时器
     private float waveTimer;         // 用来计时波次生成的计时器
     private bool isWaveSpawning = false;  // 标记是否正在进行波次生成
 
-    public Vector2 sceneBoundMax;    //表示场景边界的最大值
-    public Vector2 sceneBoundMin;    //表示场景边界的最小值
+    private Vector2 sceneBoundMax;    //表示场景边界的最大值
+    private Vector2 sceneBoundMin;    //表示场景边界的最小值
     #endregion
 
     void Start()
@@ -39,8 +38,6 @@ public class BubbleManager : MonoBehaviour
 
     void Update()
     {
-        runTime += Time.deltaTime;
-
         spawnTimer -= Time.deltaTime;
         waveTimer -= Time.deltaTime;
 
@@ -59,12 +56,6 @@ public class BubbleManager : MonoBehaviour
             StartCoroutine(SpawnBubbleWave());
             waveTimer = waveSpawnInterval;  // 重置波次计时器
         }
-    }
-
-    public float SetRandomNum(int x, int y)
-    {
-        float randomNum = Random.Range(x, y);
-        return randomNum;
     }
 
     public GameObject SpawnBubbleType()

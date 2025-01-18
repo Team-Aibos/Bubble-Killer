@@ -25,5 +25,24 @@ public class RemoteBubbleAttackState : BubbleState
     public override void Update()
     {
         base.Update();
+        if (remoteBubble.distanceToPlayer <= remoteBubble.attackRange)
+        {
+            remoteBubble.AttackPlayer();  // 执行攻击玩家的逻辑
+        }
+        else if(remoteBubble.distanceToTower <= remoteBubble.attackRange)
+        {
+            remoteBubble.AttackTower();  // 执行攻击塔的逻辑
+        }
+        else
+        {
+            // 如果既没有玩家也没有塔在攻击范围内，切换回移动状态
+            stateMachine.ChangeState(remoteBubble.remoteBubbleMoveState);
+            remoteBubble.isMoving = true;
+        }
+
+        if (remoteBubble.isDead)
+        {
+            stateMachine.ChangeState(remoteBubble.remoteBubbleDieState);
+        }
     }
 }

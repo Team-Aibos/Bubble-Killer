@@ -43,5 +43,10 @@ public class CommonBubbleMoveState : BubbleState
             stateMachine.ChangeState(commonBubble.commonBubbleAttackState);
             commonBubble.isAttacking = true;
         }
+
+        if(commonBubble.isDead)
+        {
+            stateMachine.ChangeState(commonBubble.commonBubbleDieState);
+        }
     }
 }

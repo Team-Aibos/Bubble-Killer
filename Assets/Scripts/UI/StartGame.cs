@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class StartGameUI : MonoBehaviour
 {
     public void LoadingGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Bubble Killer");
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

@@ -29,6 +29,10 @@ public class Bubble : MonoBehaviour
     public void Awake()
     {
         stateMachine = new BubbleStateMachine();
+
+        // 查找场景中的塔和玩家
+        tower = GameObject.FindWithTag("Tower").transform;
+        player = GameObject.FindWithTag("Player").transform;
     }
 
     public void Start()

@@ -12,11 +12,11 @@ public class Tower : MonoBehaviour
     [SerializeField] private float attackRate;    //攻击冷却
     [SerializeField] private float range;    //攻击范围
     [SerializeField] private GameObject bulletPrefab;    //子弹预制体
+    [SerializeField] private Transform bulletSpawn;    //子弹出生点
     #endregion
 
     #region Components
     public Animator animator { get;private set; }
-    public Transform bulletSpawn { get; private set; }
     #endregion
 
     #region State
@@ -52,6 +52,11 @@ public class Tower : MonoBehaviour
 
         stateMachine.InitialState(idleState);
     }
+
+    public void Update()
+    {
+        stateMachine.currentState.Update();
+    }        
 
     public float GetHealth()
     {

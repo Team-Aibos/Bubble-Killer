@@ -14,7 +14,7 @@ public class TowerAttackState : TowerState
     public override void Enter()
     {
         attackTimer = Time.time;
-        tower.animator.SetTrigger("TowerAttack");
+        //tower.animator.SetTrigger("TowerAttack");
     }
 
     public override void Update()

@@ -11,7 +11,7 @@ public class TowerDeadState : TowerState
 
     public override void Enter()
     {
-        tower.animator.SetTrigger("Dead");
+        //tower.animator.SetTrigger("Dead");
         Object.Destroy(tower.gameObject, 1.0f);    //Ò»Ãëºó´İ»Ù·ÀÓùËş
     }
 

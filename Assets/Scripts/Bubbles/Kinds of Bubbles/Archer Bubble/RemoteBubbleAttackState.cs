@@ -25,13 +25,16 @@ public class RemoteBubbleAttackState : BubbleState
     public override void Update()
     {
         base.Update();
-        if (remoteBubble.distanceToPlayer <= remoteBubble.attackRange)
+
+        if (remoteBubble.lastAttackTime + remoteBubble.attackGap <= Time.time && remoteBubble.distanceToPlayer <= remoteBubble.attackRange)
         {
             remoteBubble.AttackPlayer();  // Ö´ÐÐ¹¥»÷Íæ¼ÒµÄÂß¼­
+            remoteBubble.lastAttackTime = Time.time;
         }
-        else if(remoteBubble.distanceToTower <= remoteBubble.attackRange)
+        else if(remoteBubble.lastAttackTime + remoteBubble.attackGap <= Time.time && remoteBubble.distanceToTower <= remoteBubble.attackRange)
         {
             remoteBubble.AttackTower();  // Ö´ÐÐ¹¥»÷ËþµÄÂß¼­
+            remoteBubble.lastAttackTime = Time.time;
         }
         else
         {

@@ -38,7 +38,7 @@ public class Bubble : MonoBehaviour
 
     public void Start()
     {
-        //anim = GetComponentInChildren<Animator>();
+        anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -53,8 +53,14 @@ public class Bubble : MonoBehaviour
         if (health <= 0)
         {
             isDead = true;
-            Destroy(gameObject);
+            //Destroy(gameObject);
+
         }
+    }
+
+    public float GetHealth()
+    {
+        return health;
     }
 
     public bool DetectPlayer()
@@ -69,11 +75,5 @@ public class Bubble : MonoBehaviour
         }
 
         return false;
-    }
-
-    protected void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position, playerCheckDistance);
     }
 }

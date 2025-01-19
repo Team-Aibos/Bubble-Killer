@@ -15,12 +15,13 @@ public class CommonBubbleAttackState : BubbleState
     public override void Enter()
     {
         base.Enter();
+        UnityEngine.Object.Destroy(commonBubble.gameObject, 2f);
     }
 
     public override void Exit()
     {
         base.Exit();
-        UnityEngine.Object.Destroy(commonBubble.gameObject);
+        
     }
 
     public override void Update()

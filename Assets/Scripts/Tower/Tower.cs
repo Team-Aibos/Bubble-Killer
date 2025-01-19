@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tower : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class Tower : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
 
         stateMachine = new TowerStateMachine();
 
@@ -49,13 +50,18 @@ public class Tower : MonoBehaviour
 
     public void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GameObject.FindWithTag("Cannon").GetComponent<Animator>();
 
         stateMachine.InitialState(idleState);
     }
 
     public void Update()
     {
+        if (health <= 0)
+        {
+            SceneManager.LoadScene("GameOverScene");
+        }
+
         stateMachine.currentState.Update();
     }        
 
@@ -74,7 +80,7 @@ public class Tower : MonoBehaviour
         }
     }
 
-    public void TowerStrike(Transform enemy)
+    public void TowerStrike(Bubble enemy)
     {
         TowerAttack(enemy);
 
@@ -84,7 +90,7 @@ public class Tower : MonoBehaviour
 
         for (int i = 0; i < additionalTargetCount; i++)
         {
-            Transform extraTarget = enemies[i].transform;
+            Bubble extraTarget = enemies[i].GetComponent<Bubble>();
             if (extraTarget != enemy)
             {
                 TowerAttack(extraTarget);
@@ -92,10 +98,19 @@ public class Tower : MonoBehaviour
         }
     }
 
-    public void TowerAttack(Transform enemy)
+    public void TowerAttack(Bubble enemy)
     {
-        GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        bullet.GetComponent<TowerBullet>().Initialize(enemy, damage);
+
+        // 计算敌人所需的子弹数量
+        int bulletsNeeded = Mathf.CeilToInt(enemy.GetHealth() / (float)damage);
+
+        // 最大射出子弹数为敌人死亡所需的子弹数
+        for (int i = 0; i < bulletsNeeded; i++)
+        {
+            // 每发子弹都会导致伤害，直到敌人死亡
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+            bullet.GetComponent<TowerBullet>().Initialize(enemy, damage);
+        }
     }
 
     public float GetRange()

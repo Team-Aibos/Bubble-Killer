@@ -26,6 +26,8 @@ public class RemoteBubble : Bubble
     }
 
     public float attackRange;  // 远程泡泡的攻击范围
+    public float attackGap = 1f;  // 远程泡泡的攻击间隔
+    public float lastAttackTime = 0f;  // 上一次攻击的时间
 
     public float distanceToPlayer;  // 计算泡泡与玩家的距离
     public float distanceToTower;  // 计算泡泡与塔的距离
@@ -35,8 +37,8 @@ public class RemoteBubble : Bubble
 
     new private void Update()
     {
-        distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        distanceToTower = Vector2.Distance(transform.position, tower.position);
+        distanceToPlayer = Vector2.Distance(shootPoint.transform.position, player.position);
+        distanceToTower = Vector2.Distance(shootPoint.transform.position, tower.position);
 
         // 如果距离玩家或塔小于或等于攻击范围，则停止移动
         if (distanceToPlayer <= attackRange || distanceToTower <= attackRange)
@@ -45,6 +47,8 @@ public class RemoteBubble : Bubble
         }
 
         base.Update();
+
+
     }
 
     // 攻击玩家

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TowerDeadState : TowerState
 {
@@ -13,6 +14,8 @@ public class TowerDeadState : TowerState
     {
         //tower.animator.SetTrigger("Dead");
         Object.Destroy(tower.gameObject, 1.0f);    //Ò»Ãëºó´Ý»Ù·ÀÓùËþ
+
+        SceneManager.LoadScene("GameOverScene");
     }
 
     public override void Exit()

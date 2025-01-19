@@ -15,16 +15,21 @@ public class RemoteBubbleDieState : BubbleState
     public override void Enter()
     {
         base.Enter();
+        UnityEngine.Object.Destroy(remoteBubble.gameObject, 0.75f);
     }
 
     public override void Exit()
     {
         base.Exit();
-        UnityEngine.Object.Destroy(remoteBubble.gameObject);
     }
 
     public override void Update()
     {
         base.Update();
+        if (remoteBubble.isDead)
+        {
+            remoteBubble.anim.SetTrigger("RemoteBubbleDie Final");
+            
+        }
     }
 }

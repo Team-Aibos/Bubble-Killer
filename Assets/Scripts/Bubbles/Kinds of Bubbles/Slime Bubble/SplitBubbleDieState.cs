@@ -15,12 +15,13 @@ public class SplitBubbleDieState : BubbleState
     public override void Enter()
     {
         base.Enter();
+        UnityEngine.Object.Destroy(splitBubble.gameObject, 0.75f);
     }
 
     public override void Exit()
     {
         base.Exit();
-        UnityEngine.Object.Destroy(splitBubble.gameObject);
+
     }
 
     public override void Update()

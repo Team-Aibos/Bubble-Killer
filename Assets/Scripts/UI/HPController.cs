@@ -62,16 +62,4 @@ public class HpController : MonoBehaviour
             _HPShadow.fillAmount = _HPBar.fillAmount;
         }
     }
-
-    public void HPTest()
-    {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            SetCurrentHealth(currentHP - 10, _PlayerHPBar);
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            SetCurrentHealth(currentHP + 10, _PlayerHPBar);
-        }
-    }
 }

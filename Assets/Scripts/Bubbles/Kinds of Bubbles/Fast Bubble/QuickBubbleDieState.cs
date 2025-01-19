@@ -15,12 +15,12 @@ public class QuickBubbleDieState : BubbleState
     public override void Enter()
     {
         base.Enter();
+        UnityEngine.Object.Destroy(quickBubble.gameObject, 0.75f);
     }
 
     public override void Exit()
     {
         base.Exit();
-        UnityEngine.Object.Destroy(quickBubble.gameObject);
     }
 
     public override void Update()

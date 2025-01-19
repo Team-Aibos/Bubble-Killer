@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
         HP -= damage;
         if (HP <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
 

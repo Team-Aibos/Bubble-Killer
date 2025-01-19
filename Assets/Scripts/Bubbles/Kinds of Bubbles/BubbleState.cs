@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BubbleState 
+public class BubbleState
 {
     protected BubbleStateMachine stateMachine;
     protected Bubble bubble;
@@ -20,7 +20,7 @@ public class BubbleState
 
     public virtual void Enter()
     {
-        
+        bubble.anim.SetBool(animBoolName, true);
     }
 
     public virtual void Update()
@@ -30,6 +30,6 @@ public class BubbleState
 
     public virtual void Exit()
     {
-       
+       bubble.anim.SetBool(animBoolName, false);
     }
 }

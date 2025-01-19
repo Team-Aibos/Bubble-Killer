@@ -14,22 +14,26 @@ public class TowerAttackState : TowerState
     public override void Enter()
     {
         attackTimer = Time.time;
-        //tower.animator.SetTrigger("TowerAttack");
+        tower.animator.SetBool("Attack", true);
+       
     }
 
     public override void Update()
     {
-        Transform target = FindEnemy();
+        Bubble target = FindEnemy();
         if (target == null)
         {
-            tower.stateMachine.ChangeState(tower.idleState);
+            tower.animator.SetBool("Attack", false);
+            stateMachine.ChangeState(tower.idleState);
             return;
         }
 
         if (Time.time - attackTimer > tower.GetAttackRate())
         {
             attackTimer = Time.time;
+            tower.animator.SetTrigger("Shoot");
             tower.TowerStrike(target);
+            tower.animator.SetBool("Attack", false);
         }
     }
 

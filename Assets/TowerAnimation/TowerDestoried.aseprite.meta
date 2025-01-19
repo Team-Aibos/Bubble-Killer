@@ -1,0 +1,1108 @@
+fileFormatVersion: 2
+guid: a47a3c188607c494d8fcb60d0d78fd67
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: TowerDestoried_Frame_0
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 112
+      width: 26
+      height: 28
+    spriteID: d1dad6a566df87c4f9b1be113793f31c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 112}
+  - name: TowerDestoried_Frame_1
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 148
+      width: 26
+      height: 28
+    spriteID: fbe783a07b4760a46a6b502326618e3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 148}
+  - name: TowerDestoried_Frame_2
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 184
+      width: 26
+      height: 28
+    spriteID: b2672791616f03448b5bbd51ef979a75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 184}
+  - name: TowerDestoried_Frame_3
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 220
+      width: 26
+      height: 28
+    spriteID: aa65f011846bd0c4d81167fce40d416f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 220}
+  - name: TowerDestoried_Frame_4
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 40
+      width: 26
+      height: 27
+    spriteID: 6b405bfadc4f2c14d83a7d833a1e015b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 40}
+  - name: TowerDestoried_Frame_5
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 4
+      width: 26
+      height: 28
+    spriteID: 9ca8ecd01dd770e40bb3097f2bbc656d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 4}
+  - name: TowerDestoried_Frame_6
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 40
+      width: 26
+      height: 28
+    spriteID: 7129086533600c542986366ed988057a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 40}
+  - name: TowerDestoried_Frame_7
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 76
+      width: 26
+      height: 28
+    spriteID: 4d64aee73ac318740b8b97e13d50b3b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 76}
+  - name: TowerDestoried_Frame_8
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 112
+      width: 26
+      height: 28
+    spriteID: c4a3d5b831482ed4b8579163acb8befb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 112}
+  - name: TowerDestoried_Frame_9
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 148
+      width: 26
+      height: 28
+    spriteID: b5373a1aa0d2eec41a775769d622c074
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 148}
+  - name: TowerDestoried_Frame_10
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 75
+      width: 26
+      height: 27
+    spriteID: c93bacb9d6f74c147b5f36344c47f43b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 75}
+  - name: TowerDestoried_Frame_11
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 184
+      width: 26
+      height: 28
+    spriteID: 63d64971034d51e4aafc0c9b304891b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 184}
+  - name: TowerDestoried_Frame_12
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 220
+      width: 26
+      height: 28
+    spriteID: f00b7a22960bc4b449d36975ca669114
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 220}
+  - name: TowerDestoried_Frame_13
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 4
+      width: 26
+      height: 28
+    spriteID: 5e1db0d10b58a064180eed4e577dddd4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 4}
+  - name: TowerDestoried_Frame_14
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 40
+      width: 26
+      height: 28
+    spriteID: a2b1e8c046144104aab32dc1afdd7b84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 40}
+  - name: TowerDestoried_Frame_15
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 76
+      width: 26
+      height: 28
+    spriteID: 10631d153f9b7234591538cea1a0894b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 76}
+  - name: TowerDestoried_Frame_16
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 112
+      width: 26
+      height: 28
+    spriteID: e64db4c74b3f9574cb2d95fcff777c1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 112}
+  - name: TowerDestoried_Frame_17
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 148
+      width: 26
+      height: 28
+    spriteID: 3664b15a2a3aed643bc775a8f9b06345
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 148}
+  - name: TowerDestoried_Frame_18
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 184
+      width: 26
+      height: 28
+    spriteID: 8cb433723b6a78147ac9b62b11a6efba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 184}
+  - name: TowerDestoried_Frame_19
+    originalName: 
+    pivot: {x: 0.5185185, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 27
+      height: 28
+    spriteID: f79875559123f9b408651ba2b724316b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: TowerDestoried_Frame_20
+    originalName: 
+    pivot: {x: 0.5185185, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 40
+      width: 27
+      height: 28
+    spriteID: 8b1e45f6143d1ba4ebfc672e39bb702f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 40}
+  - name: TowerDestoried_Frame_21
+    originalName: 
+    pivot: {x: 0.5185185, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 27
+      height: 28
+    spriteID: a07da18798da33a42b4e11645beafeb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: TowerDestoried_Frame_22
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 220
+      width: 26
+      height: 28
+    spriteID: 85a1ce86b0ff72e4ca845e9387287f7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 220}
+  - name: TowerDestoried_Frame_23
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.107142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 4
+      width: 26
+      height: 28
+    spriteID: 91dd1f92c855bef488846b5a3d7f81df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 4}
+  - name: TowerDestoried_Frame_24
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 110
+      width: 26
+      height: 25
+    spriteID: 09635fa9044036e4eb2a92217711f193
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 110}
+  - name: TowerDestoried_Frame_25
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 143
+      width: 26
+      height: 25
+    spriteID: 386ef8220f271a847ab208eff48c03b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 143}
+  - name: TowerDestoried_Frame_26
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 176
+      width: 26
+      height: 25
+    spriteID: 538ba38e7d10df347815ac33578f1b20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 176}
+  - name: TowerDestoried_Frame_27
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 209
+      width: 26
+      height: 25
+    spriteID: e43c86895b9cc9448a07a2be01f5c3f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 209}
+  - name: TowerDestoried_Frame_28
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 4
+      width: 26
+      height: 25
+    spriteID: 7e05aa720a2670f41b06b14b2e9db1a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 4}
+  - name: TowerDestoried_Frame_29
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 37
+      width: 26
+      height: 25
+    spriteID: 55e5f3cb5f4f79f4e9c8b73108e1fde8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 37}
+  - name: TowerDestoried_Frame_30
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 70
+      width: 26
+      height: 25
+    spriteID: a3532b73d9e9dec42a4719f52f32784f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 70}
+  - name: TowerDestoried_Frame_31
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 103
+      width: 26
+      height: 25
+    spriteID: 57c18365dabd19a488c20d87cd7a0537
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 103}
+  - name: TowerDestoried_Frame_32
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 136
+      width: 26
+      height: 25
+    spriteID: 8bd56376661fc8b48a3773cd6e4c3fa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 136}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1914355620
+    name: TowerDestoried
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TowerDestoried_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: d1dad6a566df87c4f9b1be113793f31c
+    - name: TowerDestoried_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: fbe783a07b4760a46a6b502326618e3f
+    - name: TowerDestoried_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: b2672791616f03448b5bbd51ef979a75
+    - name: TowerDestoried_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: aa65f011846bd0c4d81167fce40d416f
+    - name: TowerDestoried_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 27
+      spriteId: 6b405bfadc4f2c14d83a7d833a1e015b
+    - name: TowerDestoried_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 9ca8ecd01dd770e40bb3097f2bbc656d
+    - name: TowerDestoried_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 7129086533600c542986366ed988057a
+    - name: TowerDestoried_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 4d64aee73ac318740b8b97e13d50b3b9
+    - name: TowerDestoried_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: c4a3d5b831482ed4b8579163acb8befb
+    - name: TowerDestoried_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: b5373a1aa0d2eec41a775769d622c074
+    - name: TowerDestoried_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 27
+      spriteId: c93bacb9d6f74c147b5f36344c47f43b
+    - name: TowerDestoried_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 63d64971034d51e4aafc0c9b304891b0
+    - name: TowerDestoried_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: f00b7a22960bc4b449d36975ca669114
+    - name: TowerDestoried_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 5e1db0d10b58a064180eed4e577dddd4
+    - name: TowerDestoried_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: a2b1e8c046144104aab32dc1afdd7b84
+    - name: TowerDestoried_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 10631d153f9b7234591538cea1a0894b
+    - name: TowerDestoried_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: e64db4c74b3f9574cb2d95fcff777c1b
+    - name: TowerDestoried_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 3664b15a2a3aed643bc775a8f9b06345
+    - name: TowerDestoried_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 8cb433723b6a78147ac9b62b11a6efba
+    - name: TowerDestoried_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 27
+        height: 28
+      spriteId: f79875559123f9b408651ba2b724316b
+    - name: TowerDestoried_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 27
+        height: 28
+      spriteId: 8b1e45f6143d1ba4ebfc672e39bb702f
+    - name: TowerDestoried_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 27
+        height: 28
+      spriteId: a07da18798da33a42b4e11645beafeb3
+    - name: TowerDestoried_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 85a1ce86b0ff72e4ca845e9387287f7f
+    - name: TowerDestoried_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 28
+      spriteId: 91dd1f92c855bef488846b5a3d7f81df
+    - name: TowerDestoried_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: 09635fa9044036e4eb2a92217711f193
+    - name: TowerDestoried_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: 386ef8220f271a847ab208eff48c03b1
+    - name: TowerDestoried_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: 538ba38e7d10df347815ac33578f1b20
+    - name: TowerDestoried_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: e43c86895b9cc9448a07a2be01f5c3f3
+    - name: TowerDestoried_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: 7e05aa720a2670f41b06b14b2e9db1a1
+    - name: TowerDestoried_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: 55e5f3cb5f4f79f4e9c8b73108e1fde8
+    - name: TowerDestoried_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: a3532b73d9e9dec42a4719f52f32784f
+    - name: TowerDestoried_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: 57c18365dabd19a488c20d87cd7a0537
+    - name: TowerDestoried_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 3
+        width: 26
+        height: 25
+      spriteId: 8bd56376661fc8b48a3773cd6e4c3fa8
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: Default
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}

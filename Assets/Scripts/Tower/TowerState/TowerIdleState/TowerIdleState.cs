@@ -16,10 +16,8 @@ public class TowerIdleState : TowerState
 
     public override void Update()
     {
-        //tower.animator.Play("Idle");
-
-        Transform enemy = FindEnemy();
-        if (enemy!= null)
+        Bubble enemy = FindEnemy();
+        if (enemy != null)
         {
             stateMachine.ChangeState(tower.attackState);
         }

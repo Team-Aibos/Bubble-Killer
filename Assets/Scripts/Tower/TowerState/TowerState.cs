@@ -19,7 +19,7 @@ public class TowerState
 
     public virtual void Enter()
     {
-
+        
     }
 
     public virtual void Update()    
@@ -32,7 +32,7 @@ public class TowerState
 
     }
 
-    public Transform FindEnemy()
+    public Bubble FindEnemy()
     {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(tower.transform.position, tower.GetRange(), LayerMask.GetMask("Enemy"));
         if (enemies.Length > 0)
@@ -45,7 +45,7 @@ public class TowerState
                     closestEnemy = enemies[i];
                 }
             }
-            return closestEnemy.transform;
+            return closestEnemy.GetComponent<Bubble>();
         }
 
         return null;
